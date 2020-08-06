@@ -1,0 +1,11 @@
+Bluecloaks kicklist, generated: 2015-09-15 15:24:14
+
+
+
+
+
+
+[b]Bluecloaks[/b]
+[table]
+[tr][td]Character[/td][td]Rank[/td][td]Last Logout[/td][/tr]
+[/table]

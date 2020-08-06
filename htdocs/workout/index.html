@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Workout Generator</title>
+    <script type="text/javascript" src="../js/jquery-2.1.1.js"></script>
+    <script type="text/javascript">
+	var CXWorkout;
+	var displayMoves = [];
+	var moves = [
+		'Burpees',
+		'Jumping Lunges',
+		'Jackknife Crunches',
+		'Lunges with Reverse Leg Raise',
+		'Jumping Squats',
+		'Push Ups',
+		'Single Leg Push Up',
+		'Side Planks with Leg Raises',
+		'Lateral Jumps',
+		'Mountain Climbers',
+		'Jumping Jacks'
+	];
+
+	function getRandomInt(min, max) {
+		return Math.floor(Math.random() * (max - min + 1) + min);
+	}
+
+	function shuffle(inputArray) {
+		var outputArray = inputArray;
+		var currentIndex = outputArray.length, temporaryValue, randomIndex;
+		while (0 !== currentIndex) {
+			randomIndex = Math.floor(Math.random() * currentIndex);
+			currentIndex -= 1;
+			temporaryValue = outputArray[currentIndex];
+			outputArray[currentIndex] = outputArray[randomIndex];
+			outputArray[randomIndex] = temporaryValue;
+		}
+		return outputArray;
+	}
+
+	function generateWorkout(){
+		$("section#workout ul").empty();
+		displayMoves = shuffle(moves);
+		var numberOfItems = getRandomInt(displayMoves.length/3,displayMoves.length);
+		var totalRuns = getRandomInt(3,6) + (displayMoves.length-numberOfItems);
+
+		$("#totalruns").html(totalRuns);
+		for(var i=0; i<numberOfItems; i++){
+			
+			var count = getRandomInt((function(){var output = 12-totalRuns;if(output<=0){ output = 5; }return output;})(),(function(){var output = 20-totalRuns;if(output<=0){ output = 8; } return output;})());
+			$("section#workout ul").append("<li>"+count+" "+displayMoves[i]+"</li>");
+		}
+	}
+
+    $(function(){
+    	generateWorkout();
+    	$("footer h2 button").on("click", function(){window.generateWorkout();});
+    });
+    </script>
+</head>
+<body>
+	<header>
+		<h1>Workout Generator</h1>
+	</header>
+
+	<section id="workout">
+		<h2>Do This <span id="totalruns"></span> Times FAST</h2>
+		<ul></ul>
+	</section>
+
+	<footer>
+		<h2>Don't like this list?<br><button>Regenerate it!</button></h2>
+
+	</footer>
+</body>
+</html>

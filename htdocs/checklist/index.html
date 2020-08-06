@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>The Checklist</title>
+	<link href="../fonts/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="../js/mobile/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css">
+	<link href="../css/checklist.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../js/jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="../js/mobile/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="../js/checklist.js"></script>
+    <script type="text/javascript">
+	var CXList;
+    $(function(){
+		CXList = new Carnix.Classes.Checklist();
+    });
+    </script>
+</head>
+<body>
+<!--[if lt IE 9]>
+	<div class="unsupported">This tool requires the use of IE 9 or later.  Granpa IE8 and earlier browsers are not supported.</div>
+<![endif]-->
+	<div data-role="page" id="one" data-theme="a">
+		<div data-role="header">
+			<div class="sys-message">
+				<div>
+					<span class="sys-message-text"></span>
+				</div>
+			</div>
+			<div class="ui-grid-a">
+				<div class="ui-block-a">
+					<h1>The Checklist</h1>
+				</div>
+				<div class="ui-block-b settings-control">
+					<div class="settings-icon"><a data-rel="dialog" data-transition="pop" href="#two"><i class="fa fa-cog"></i></a></div>
+				</div>
+			</div>
+		</div>
+		<div data-role="content">	
+			<div class="ui-grid-a">
+				<div class="ui-block-a list-container" id="list_column_1">
+					<h2><span class="name"></span></h2>
+					<fieldset data-role="controlgroup">
+					</fieldset>
+				</div>
+				
+				<div class="ui-block-b list-container" id="list_column_2">
+					<h2><span class="name"></span></h2>
+					<fieldset data-role="controlgroup">
+					</fieldset>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div data-role="page" id="two" data-theme="a">
+		<div class="configurator">
+			<h2>Enter or modify your settings:</h2>
+			<div data-role="fieldcontain">
+				<div><label for="settings_numberofcolumns" class="select">Number of Columns:</label></div>
+				<div>
+					<select name="settings_numberofcolumns" id="settings_numberofcolumns" data-native-menu="false">
+						<option>Column Count</option>
+						<option value="1">One</option>
+						<option value="2">Two</option>
+					</select>
+				</div>
+			</div>
+			<div data-role="fieldcontain">
+				<div><label for="column_name_0">Column 1 Label:</label></div>
+				<div><input type="text" name="column_name_0" id="column_name_0" value=""></div>
+			</div>
+			<div data-role="fieldcontain">
+				<div><label for="column_items_0">Column 1 Items:  (one item per line)</label></div>
+				<div><textarea cols="40" rows="8" name="column_items_0" id="column_items_0"></textarea></div>
+			</div>
+			<hr>
+			<div data-role="fieldcontain">
+				<div><label for="column_name_1">Column 2 Label:</label></div>
+				<div><input type="text" name="column_name_1" id="column_name_1" value=""></div>
+			</div>
+			<div data-role="fieldcontain">
+				<div><label for="column_items_2">Column 2 Items:  (one item per line)</label></div>
+				<div><textarea cols="40" rows="8" name="column_items_1" id="column_items_1"></textarea></div>
+			</div>
+			<div data-role="fieldcontain">
+				<a href="#one" class="btn-save" data-role="button" data-inline="true" data-transition="slide" data-theme="b">Save</a>
+				<a href="#one" class="btn-cancel" data-role="button" data-inline="true" data-transition="slide">Cancel</a>
+			</div>
+		</div>
+	</div>
+
+	</div>
+</body>
+</html>
