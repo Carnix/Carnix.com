@@ -1,0 +1,11 @@
+Goldcloaks kicklist, generated: 2015-09-15 15:24:10
+
+
+
+
+
+
+[b]Goldcloaks[/b]
+[table]
+[tr][td]Character[/td][td]Rank[/td][td]Last Logout[/td][/tr]
+[/table]
