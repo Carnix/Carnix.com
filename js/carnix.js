@@ -1,3 +1,8 @@
+const cxLoaded = new CustomEvent("cxScriptLoaded", { detail: {} });
+document.dispatchEvent(cxLoaded);
+
+
+/* screw jquery
 var Carnix = {}; Carnix.Classes = {};
 
 Carnix.Classes.AutoPlayer = function(config){
@@ -206,3 +211,4 @@ Carnix.Classes.Base = function(config){
 	};
 	return this.Class.init(config);
 };
+*/
