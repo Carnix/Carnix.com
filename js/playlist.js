@@ -49,3 +49,5 @@ class Playlist {
     }
 
 }
+
+window.playlist = new Playlist({ 'autorun': true });
