@@ -15,7 +15,6 @@ class Playlist {
 
         this.SetEvents();
 
-
     }
 
 
