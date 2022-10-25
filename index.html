@@ -16,25 +16,30 @@
   </header>
 
   <main>
-    <section>
-      <p><strong>There is content here, but if you don't know how to find it, then you probably aren't supposed to.</strong></p>
-      <p>Here's a picture of my cat, for your trouble.  <strong>He is judging you.</strong></p>
+    <section id="sadface-container" class="show">
+      <svg id="sadface-svg" viewBox="0 0 59 60">
+        <g id="sadface-layer" transform="translate(1.719791653752374,-236.9999998807909)">
+          <path id="sadface-path" d="m 32.28020834624764,248.9999998807905 h 9 v 9.0000000000002 h -9 z m -18,0 h 14.99999999999999 v 12.0000000000002 h 12.00000000000001 v 24 h -27 z m 6.00000000000001,6.0000000000004 h 3.00000000000001 v 5.9999999999998 h -3.00000000000001 z m 0,20.9999999999996 v 2.9999999999998 h 3.00000000000001 v -6 h 9.999999999999985 v 6 h 2.99999999999999 v -2.9999999999998 z m -9,12.0000000000002 h 33 v -36.0000000000002 h -6.00000000000001 v -6.0000000000002 h -27 z" />
+        </g>
+      </svg>
+      <p>oh no!</p>
     </section>
 
-    <section id="munch-container">
-        <p><img src="images/munch.jpg" id="munch"></p>
+    <section id="munch-container" class="fadeIn hide">
+      <h2>Well well well...  aren't you the persistent one...</h2>
+      <p>There is content here, but if you don't know how to find it, then you probably aren't supposed too.</p>
+      <p>But, here's a picture of my cat, for your trouble.</p>
+      <p><em>He is judging you.</em></p>
+      <p><img src="images/munch.jpg" id="munch"></p>
     </section>
 
-    <section>
-      <p>bye now...</p>
-    </section>
   </main>
 
   <footer>
     <div id="consent">Note: This site uses Google Analytics.</div>
     <div>
-      <span id="optoutstring" class="optinlink">If that's not OK, <a href id="optout">click here to opt out</a>.</span>
-      <span id="optinstring" class="optinlink">If that's OK, <a href id="optin">click here to opt in</a>.</span>
+      <span id="optoutstring" class="optinlink hide">If that's not OK, <a href id="optout">click here to opt out</a>.</span>
+      <span id="optinstring" class="optinlink hide">If that's OK, <a href id="optin">click here to opt in</a>.</span>
     </div>    
   </footer>
 
