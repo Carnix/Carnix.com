@@ -19,32 +19,31 @@ main {
 }
 
 footer {
-	background-color: #050505;
+	background-color: #eee;
 	padding: 10px 10px;
-	height: 4rem;
-	color: #666;
+	color: #333;
 }
 
-h1{
+h1 {
 	font-size: 300%;
 	font-weight: 700;
 }
 
-h2{
+h2 {
 	font-size: 200%;
 	font-weight: 700;
 	color: #ff3333;
 }
 
-.show{
+.show {
 	display: block;
 }
 
-.hide{
+.hide {
 	display: none;
 }
 
-.fadeIn{
+.fadeIn {
 	animation: fadeIn 3s;
 	-webkit-animation: fadeIn 3s;
 	-moz-animation: fadeIn 3s;
@@ -57,29 +56,33 @@ h2{
   100% { opacity: 1; }
 }
 
-#munch-container{
+#munch-container {
 	width: 100%;
 	text-align: center;
 }
 
-#munch{
+#munch {
 	margin: 0 auto;
 	max-width: 800px;
 	width: 100%;
 	border-radius: 50%;
 }
 
-#consent{}
+#consent {}
 
-#sadface-container{
+#sadface-container {
 	text-align: center;
 }
 
-#sadface-svg{
+#sadface-svg {
 	height: 59px;
 	width: 60px;
 }
 
-#sadface-path{
+#sadface-path {
 	fill:#535353;
+}
+
+#bb-container {
+	padding: 30px;
 }

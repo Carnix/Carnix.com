@@ -47,17 +47,18 @@ window.addEventListener('load', event => {
 
 });
 
+try{
+	document.getElementById('sadface-svg').addEventListener('click', event => {
+		const target = event.target;
+		const showElement = document.getElementById('munch-container');
+		const hideElement = document.getElementById('sadface-container');
 
-document.getElementById('sadface-svg').addEventListener('click', event => {
-	const target = event.target;
-	const showElement = document.getElementById('munch-container');
-	const hideElement = document.getElementById('sadface-container');
+		showElement.classList.remove('hide');
+		showElement.classList.add('show');
 
-	showElement.classList.remove('hide');
-	showElement.classList.add('show');
-
-	hideElement.classList.remove('show');
-	hideElement.classList.add('hide');
+		hideElement.classList.remove('show');
+		hideElement.classList.add('hide');
 
 
-});
+	});
+}catch(error){}
