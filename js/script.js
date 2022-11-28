@@ -44,6 +44,8 @@ window.addEventListener('load', event => {
 
 	}
 
+	console.log('[carnix@localhost]$ grep -r fks * 2> /dev/null');
+	console.log('[carnix@localhost]$');
 
 });
 
