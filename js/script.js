@@ -1,66 +1,83 @@
-window.addEventListener('load', event => {
+/**
+ * Event listener that triggers when the window has loaded.
+ * Initializes tracking and user consent management.
+ */
+window.addEventListener('load', () => {
+    // Check if user hasn't opted out of tracking
+    if (localStorage.getItem('optout') !== 'true') {
+        // Create and append Google Analytics script
+        const gaScript = document.createElement('script');
+        gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-C6WJMPH8E1';
+        document.body.append(gaScript);
 
-	if(localStorage.getItem('optout') !== 'true'){
+        // Initialize Google Analytics tracking
+        window.dataLayer = window.dataLayer || [];
+        /**
+         * Pushes tracking data to the Google Analytics data layer.
+         * @param {...*} args - Tracking arguments to push.
+         */
+        const gtag = (...args) => dataLayer.push(args);
+        gtag('js', new Date());
+        gtag('config', 'G-C6WJMPH8E1');
+    }
 
-		const gaScript = document.createElement('script');
+    /**
+     * Manages user consent and corresponding UI elements.
+     */
+    const consentCheck = (() => {
+        const optOutLink = document.getElementById('optout');
+        const optInLink = document.getElementById('optin');
 
-		gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-C6WJMPH8E1';
-		document.body.append(gaScript);
+        const optinString = document.getElementById('optinstring');
+        const optoutString = document.getElementById('optoutstring');
 
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-		gtag('config', 'G-C6WJMPH8E1');
+        // Show appropriate UI based on user's consent choice
+        if (localStorage.getItem('optout') === 'true') {
+            optinString.classList.remove('hide');
+            optinString.classList.add('show');
+        } else {
+            optoutString.classList.remove('hide');
+            optoutString.classList.add('show');
+        }
 
-	}
+        // Event listener for opting out
+        optOutLink.addEventListener('click', () => {
+            localStorage.setItem('optout', true);
+        });
 
+        // Event listener for opting in
+        optInLink.addEventListener('click', () => {
+            localStorage.removeItem('optout');
+        });
+    })();
 
-	const consentCheck = ( _ => {
+    /**
+     * Placeholder for the showMunch function.
+     * @param {Event} event - The event triggering the function.
+     */
+    const showMunch = event => {
+        // Implementation of showMunch function goes here
+    };
 
-		const optOutLink = document.getElementById('optout')
-		const optInLink = document.getElementById('optin')
-
-		if(localStorage.getItem('optout') === 'true'){
-			document.getElementById('optinstring').classList.remove('hide')
-			document.getElementById('optinstring').classList.add('show');
-		}
-		else{
-			document.getElementById('optoutstring').classList.remove('hide')
-			document.getElementById('optoutstring').classList.add('show');
-		}
-
-		optOutLink.addEventListener('click', event => {
-			localStorage.setItem('optout', true);
-		});
-
-		optInLink.addEventListener('click', event => {
-			localStorage.removeItem('optout');
-		});
-
-	})();
-
-
-	const showMunch = (event) => {
-
-	}
-
-	console.log('[carnix@localhost]$ grep -r fks * 2> /dev/null');
-	console.log('[carnix@localhost]$');
-
+    // Log a message to the console
+    console.log('[carnix@localhost]$ grep -r fks * 2> /dev/null');
+    console.log('[carnix@localhost]$');
 });
 
-try{
-	document.getElementById('sadface-svg').addEventListener('click', event => {
-		const target = event.target;
-		const showElement = document.getElementById('munch-container');
-		const hideElement = document.getElementById('sadface-container');
+try {
+    // Event listener for clicking the sadface SVG
+    document.getElementById('sadface-svg').addEventListener('click', event => {
+        const target = event.target;
+        const showElement = document.getElementById('munch-container');
+        const hideElement = document.getElementById('sadface-container');
 
-		showElement.classList.remove('hide');
-		showElement.classList.add('show');
+        // Show the Munch container and hide the sadface container
+        showElement.classList.remove('hide');
+        showElement.classList.add('show');
 
-		hideElement.classList.remove('show');
-		hideElement.classList.add('hide');
-
-
-	});
-}catch(error){}
+        hideElement.classList.remove('show');
+        hideElement.classList.add('hide');
+    });
+} catch (error) {
+    // Handle any errors that might occur
+}

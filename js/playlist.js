@@ -1,52 +1,43 @@
-`use strict`
+'use strict';
 
-class Playlist {
+/**
+ * Initializes the playlist and sets event listeners for track items.
+ * @param {Object} config - The configuration for the playlist.
+ * @param {boolean} config.autorun - Whether the playlist should auto-run.
+ */
+const initializePlaylist = config => {
+    const tracks = {};
 
-    constructor(config){
-        this.config = config;
-        if(config.autorun === true){
-            this.init();
-        }
-    }
+    /**
+     * Sets click event listeners for track items.
+     */
+    const setEvents = () => {
+        const items = [...document.querySelectorAll('div#tracks a')];
 
-    init(){
-
-        this.tracks = {};
-
-        this.SetEvents();
-
-    }
-
-
-    SetEvents(tracks){
-        let items = [...document.querySelectorAll(`div#tracks a`)];
-
-        items.forEach( item => {
-
-            item.addEventListener("click", (event) => {
+        items.forEach(item => {
+            item.addEventListener('click', event => {
                 event.preventDefault();
 
-                
-                items.forEach( item => {
+                items.forEach(item => {
                     delete item.dataset.playing;
-                    if(document.getElementById('player-control')){
-                        document.getElementById('player-control').remove();
+                    const playerControl = document.getElementById('player-control');
+                    if (playerControl) {
+                        playerControl.remove();
                     }
                 });
 
-
-
                 item.dataset.playing = true;
-                let mp3file = item.href;
-                let player = `<div id="player-control"><audio controls autoplay="true"><source src="${mp3file}" type="audio/mpeg"></audio></div>`;
+                const mp3file = item.href;
+                const player = `<div id="player-control"><audio controls autoplay="true"><source src="${mp3file}" type="audio/mpeg"></audio></div>`;
                 item.insertAdjacentHTML('afterend', player);
-
             });
-
         });
+    };
 
+    if (config.autorun) {
+        setEvents();
     }
+};
 
-}
-
-window.playlist = new Playlist({ 'autorun': true });
+// Entry point: Initialize the playlist with autorun enabled.
+initializePlaylist({ autorun: true });

@@ -1,88 +1,142 @@
+/**
+ * Global styling for all elements.
+ */
 * {
-	font-family: "Courier New", sans-serif;
+  font-family: "Courier New", sans-serif;
 }
 
+/**
+ * Reset default margin for the body.
+ */
 body {
-	margin: 0;
+  margin: 0;
 }
 
+/**
+ * Styling for the header section.
+ */
 header {
-	padding: 10px 10px;
-	text-align: center;
+  padding: 10px;
+  text-align: center;
 }
 
+/**
+ * Styling for the main content section.
+ */
 main {
-/*	min-height: calc(100vh - 4rem); */
-	color: #fff;
-	background-color: #000;
-	padding: 10px 10px;
+  /*min-height: calc(100vh - 4rem);*/
+  color: #fff;
+  background-color: #000;
+  padding: 10px;
 }
 
+/**
+ * Styling for the footer section.
+ */
 footer {
-	background-color: #eee;
-	padding: 10px 10px;
-	color: #333;
+  background-color: #eee;
+  padding: 10px;
+  color: #333;
 }
 
+/**
+ * Styling for level 1 headings.
+ */
 h1 {
-	font-size: 300%;
-	font-weight: 700;
+  font-size: 300%;
+  font-weight: 700;
 }
 
+/**
+ * Styling for level 2 headings.
+ */
 h2 {
-	font-size: 200%;
-	font-weight: 700;
-	color: #ff3333;
+  font-size: 200%;
+  font-weight: 700;
+  color: #ff3333;
 }
 
+/**
+ * Display class for showing elements.
+ */
 .show {
-	display: block;
+  display: block;
 }
 
+/**
+ * Display class for hiding elements.
+ */
 .hide {
-	display: none;
+  display: none;
 }
 
+/**
+ * Animation for fading in elements.
+ */
 .fadeIn {
-	animation: fadeIn 3s;
-	-webkit-animation: fadeIn 3s;
-	-moz-animation: fadeIn 3s;
-	-o-animation: fadeIn 3s;
-	-ms-animation: fadeIn 3s;
+  animation: fadeIn 3s;
+  -webkit-animation: fadeIn 3s;
+  -moz-animation: fadeIn 3s;
+  -o-animation: fadeIn 3s;
+  -ms-animation: fadeIn 3s;
 }
 
+/**
+ * Keyframes for the fadeIn animation.
+ */
 @keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
 
+/**
+ * Styling for the container of the "munch" element.
+ */
 #munch-container {
-	width: 100%;
-	text-align: center;
+  width: 100%;
+  text-align: center;
 }
 
+/**
+ * Styling for the "munch" element.
+ */
 #munch {
-	margin: 0 auto;
-	max-width: 800px;
-	width: 100%;
-	border-radius: 50%;
+  margin: 0 auto;
+  max-width: 800px;
+  width: 100%;
+  border-radius: 50%;
 }
 
+/**
+ * Styling for the consent container.
+ */
 #consent {}
 
+/**
+ * Styling for the container of the "sadface" element.
+ */
 #sadface-container {
-	text-align: center;
+  text-align: center;
 }
 
+/**
+ * Styling for the "sadface" SVG element.
+ */
 #sadface-svg {
-	height: 59px;
-	width: 60px;
+  height: 59px;
+  width: 60px;
 }
 
+/**
+ * Styling for the path within the "sadface" SVG.
+ */
 #sadface-path {
-	fill:#535353;
+  fill: #535353;
 }
 
+/**
+ * Styling for the container with class "bb-container".
+ */
 #bb-container {
-	padding: 30px;
+  padding: 30px;
 }
