@@ -16,6 +16,35 @@ let autocompleteInput;
 let autocomplete; // Declare autocomplete at a broader scope
 
 /**
+ * Initializes the Google Maps API with the specified library and callback function.
+ *
+ * @param {string} library - The Google Maps library to load (e.g., 'places', 'geometry', etc.).
+ */
+const gapi = (library) => {
+  /**
+   * The Google Maps API key.
+   * @type {string}
+   */
+  const key = atob('QUl6YVN5RF9tdkZMaDgxVElxRU9TWlZrejBra1hoVnFJY0N6bzRB');
+
+  /**
+   * The name of the callback function to be executed when the API is loaded.
+   * @type {string}
+   */
+  const callback = 'initAutocomplete';
+
+  /**
+   * Creates a SCRIPT element and appends it to the document's body to load the Google Maps API.
+   * @type {HTMLScriptElement}
+   */
+  const script = document.createElement('SCRIPT');
+  script.src = 'https://maps.googleapis.com/maps/api/js?key=' + key + '&libraries=' + library + '&callback=' + callback;
+
+  // Append the script element to the document's body.
+  document.body.append(script);
+}
+
+/**
  * Initialize the Google Places Autocomplete.
  * @function initAutocomplete
  */
@@ -42,6 +71,7 @@ const fillInAddress = () => {
     }
   }
 
+  document.getElementById('autocomplete').value = place.name;
   document.getElementById("business").value = place.name;
   document.getElementById("business").disabled = false;
 
@@ -52,6 +82,9 @@ const fillInAddress = () => {
       document.getElementById(addressType).value = val;
     }
   }
+
+  
+
 };
 
 /**
