@@ -1,0 +1,68 @@
+/* Style for ASCII viewport */
+.ascii-viewport {
+    border: 2px solid #333;
+    padding: 10px;
+    font-family: monospace;
+    background-color: #111;
+    color: #fff;
+    white-space: pre;
+    overflow: hidden;
+    width: 300px;
+    height: 200px;
+  }
+  
+  /* Style for ASCII sprites */
+  .ascii-sprite {
+    font-size: 16px;
+  }
+  
+  /* Style for control buttons */
+  .controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+  }
+  
+  .control-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  .control-button:hover {
+    background-color: #555;
+  }
+  
+  .animation-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    animation: fade-in-out 3s ease;
+    z-index: 999; /* Ensure the animation is displayed on top of everything */
+  }
+  
+  @keyframes fade-in-out {
+    0%, 100% {
+      opacity: 0;
+    }
+    20%, 80% {
+      opacity: 1;
+    }
+  }
+  
+  
