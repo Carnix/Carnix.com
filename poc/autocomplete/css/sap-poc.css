@@ -1,0 +1,131 @@
+/**
+ * @file Stylesheet for Company Autocomplete POC
+ * @version 0.1.0
+ * @author Michael Langford
+ *
+ * This stylesheet defines the styles for the Company Autocomplete POC.
+ */
+
+/* Global Variables */
+
+/**
+ * Global color variables.
+ */
+ :root {
+    --blue: #0f6db5;
+    --gray: #333;
+    --light-gray: #f6f6f6;
+    --white: #fff;
+    --black: #000;
+}
+
+/* Body Styling */
+
+/**
+ * Styling for the body element.
+ */
+body {
+    background-color: var(--light-gray);
+    color: var(--gray);
+    font-family: Arial, sans-serif;
+}
+
+/* Autocomplete Container */
+
+/**
+ * Styling for the autocomplete container.
+ */
+.sap-autocomplete {
+    position: relative;
+    display: inline-block;
+}
+
+/* Autocomplete List Styling */
+
+/**
+ * Styling for the autocomplete list container.
+ */
+#sap-autocompleteList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    border-radius: 4px;
+    display: none;
+}
+
+/* Autocomplete List Item Styling */
+
+/**
+ * Styling for each item in the autocomplete list.
+ */
+#sap-autocompleteList li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s; /* Add color transition */
+    font-size: 14px;
+}
+
+/* Selected and Hovered Item Styling */
+
+/**
+ * Styling for the selected and hovered items in the autocomplete list.
+ */
+#sap-autocompleteList li.selected,
+#sap-autocompleteList li:hover {
+    background-color: var(--blue) !important;
+    color: var(--white);
+}
+
+/**
+ * Styling for items when hovered over in the autocomplete list.
+ */
+#sap-autocompleteList li:hover {
+    background-color: var(--light-gray);
+}
+
+/* Search Input Styling */
+
+/**
+ * Styling for the search input element.
+ */
+#sap-searchInput {
+    width: 500px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid var(--gray);
+    border-radius: 4px;
+    transition: border-color 0.2s;
+}
+
+/**
+ * Styling for the search input when focused.
+ */
+#sap-searchInput:focus {
+    outline: none;
+    border-color: #007acc;
+}
+
+/* Selected Item Styling */
+
+/**
+ * Styling for the selected item in the autocomplete list.
+ */
+.selected {
+    background-color: var(--blue); /* Use a different color, such as blue */
+    color: var(--white); /* Set the text color to white for contrast */
+}
+
+/* Visible State for Autocomplete List */
+
+/**
+ * Styling for the visible state of the autocomplete list.
+ */
+.visible {
+    display: block !important;
+}

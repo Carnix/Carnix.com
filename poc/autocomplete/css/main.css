@@ -1,0 +1,91 @@
+/* main.css */
+
+/**
+ * Global variable definitions.
+ */
+ :root {
+    --blue: #0f6db5;
+    --gray: #333333;
+    --light-gray: #f6f6f6;
+    --white: #ffffff;
+}
+
+/**
+ * Global reset for body and text styles.
+ */
+body {
+    background-color: var(--light-gray);
+    color: var(--gray);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/**
+ * Styling for the header section.
+ */
+header {
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 20px;
+    text-align: center;
+}
+
+/**
+ * Styling for the header's h1 element.
+ */
+header h1 {
+    font-size: 30px;
+    margin: 0;
+}
+
+/**
+ * Styling for the main content area.
+ */
+main {
+    padding: 20px;
+}
+
+/**
+ * Styling for individual sections.
+ */
+section {
+    background-color: var(--white);
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/**
+ * Styling for the list of POCs.
+ */
+.poc-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+/**
+ * Styling for individual list items.
+ */
+.poc-list li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/**
+ * Styling for links within the POC list.
+ */
+.poc-list a {
+    color: var(--blue);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+/**
+ * Styling for hovered links.
+ */
+.poc-list a:hover {
+    color: var(--black);
+}

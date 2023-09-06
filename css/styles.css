@@ -140,3 +140,53 @@ h2 {
 #bb-container {
   padding: 30px;
 }
+
+/* Styles for the secret navigation */
+#secretNav {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  display: none; /* Initially hidden */
+  z-index: 9999;
+}
+
+/* Remove bullet points and align list items to the left */
+#secretNav ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: left; /* Align the list items to the left */
+  margin-left: 0; /* Remove default margin */
+}
+
+/* Styles for the secret link */
+#secretLink {
+  cursor: pointer;
+  color: #ff3333;
+  text-decoration: underline;
+}
+
+/* Styles for the close button */
+#closeNav {
+  cursor: pointer;
+  color: #666;
+  font-size: 14px;
+  margin-top: 10px;
+  text-decoration: none;
+  display: block;
+  width: fit-content;
+}
+
+/* Hover effect for the close button */
+#closeNav:hover {
+  color: #ff3333;
+}
+
+/* Show the secret navigation */
+.show {
+  display: block !important; /* Show the secret navigation */
+}

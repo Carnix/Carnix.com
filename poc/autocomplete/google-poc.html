@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Google Places AutoComplete API</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/google-poc.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Google Places AutoComplete API</h1>
+    </header>
+
+    <main>
+        <section id="google-places">
+            <div id="locationField">
+                <input id="autocomplete" placeholder="Enter your company name" onFocus="geolocate()" type="text" />
+            </div>
+            <div id="address" class="address-form">
+                <div class="address-row">
+                    <label class="label" for="business">Company Name</label>
+                    <input class="field" id="business" disabled="true" />
+                </div>
+                <div class="address-row">
+                    <label class="label" for="street_number">Address 1</label>
+                    <input class="field" id="street_number" disabled="true" />
+                </div>
+                <div class="address-row">
+                    <label class="label" for="route">Address 2</label>
+                    <input class="field" id="route" disabled="true" />
+                </div>
+                <div class="address-row">
+                    <label class="label" for="locality">City</label>
+                    <input class="field" id="locality" disabled="true" />
+                </div>
+                <div class="address-row">
+                    <label class="label" for="administrative_area_level_1">State</label>
+                    <input class="field" id="administrative_area_level_1" disabled="true" />
+                </div>
+                <div class="address-row">
+                    <label class="label" for="postal_code">Zip code</label>
+                    <input class="field" id="postal_code" disabled="true" />
+                </div>
+                <div class="address-row">
+                    <label class="label" for="country">Country</label>
+                    <input class="field" id="country" disabled="true" />
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p><button data-href="index.html">back</button></p>
+    </footer>
+
+    <script src="js/google-poc.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_mvFLh81TIqEOSZVkz0kkXhVqIcCzo4A&libraries=places&callback=initAutocomplete"></script>
+
+</body>
+</html>

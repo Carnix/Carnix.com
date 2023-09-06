@@ -1,0 +1,79 @@
+/**
+ * Stylesheet for the Google Places AutoComplete API example.
+ * @module GooglePlacesStyles
+ * @version 0.1.0
+ * @author Your Name
+ */
+
+/**
+ * Root variable definitions.
+ */
+ :root {
+  --blue: #0f6db5;
+  --gray: #333;
+  --light-gray: #f6f6f6;
+  --white: #fff;
+  --black: #000;
+}
+
+/**
+ * Body styling.
+ */
+body {
+  background-color: var(--light-gray);
+  color: var(--gray);
+  font-family: Arial, sans-serif;
+}
+
+/**
+ * Styling for the address form container.
+ */
+.address-form {
+  font-family: Arial, sans-serif;
+  width: 400px;
+  margin: 25px 0px;
+  padding: 20px;
+  border: 1px solid var(--gray);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px var(--black);
+}
+
+/**
+ * Styling for each row within the address form.
+ */
+.address-row {
+  margin-bottom: 10px;
+}
+
+/**
+ * Styling for labels in the address form.
+ */
+.label {
+  display: inline-block;
+  width: 160px;
+  font-weight: bold;
+}
+
+/**
+ * Styling for input fields in the address form.
+ */
+.field {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid var(--gray);
+  border-radius: 3px;
+  font-size: 14px;
+  background-color: var(--light-gray);
+}
+
+/**
+ * Styling for the Google Places autocomplete input.
+ */
+#autocomplete {
+  width: 500px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid var(--gray);
+  border-radius: 4px;
+  transition: border-color 0.2s;
+}
