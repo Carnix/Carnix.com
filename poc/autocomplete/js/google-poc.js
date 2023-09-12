@@ -82,9 +82,6 @@ const fillInAddress = () => {
       document.getElementById(addressType).value = val;
     }
   }
-
-  
-
 };
 
 /**

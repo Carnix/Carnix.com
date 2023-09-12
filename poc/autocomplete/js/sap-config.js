@@ -22,6 +22,10 @@ const settings = {
       toTitleCase: false,
       alphabetical: true,
     },
+    pocFiles: {
+      round1: 'sap-poc.html',
+      round2: 'full-form.html',
+    }
   };
   
 export default settings;

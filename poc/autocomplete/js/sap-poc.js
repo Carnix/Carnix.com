@@ -14,7 +14,7 @@ import settings from './sap-config.js';
  * @param {string} url - The URL to fetch the data from.
  * @returns {Promise<Object[]>} - The promise containing the fetched data.
  */
-const getsettings = async (url = settings.datafile) => {
+const getSettings = async (url = settings.datafile) => {
   const response = await fetch(url);
   const companies = await response.json();
   return companies;
@@ -54,11 +54,26 @@ const normalize = (json, config) => {
 /**
  * Entry point for the company autocomplete functionality.
  */
-getsettings().then(json => {
+getSettings().then(json => {
   const companies = normalize(json, settings);
+  const url = new URL(window.location.href);
 
-  const searchInput = document.getElementById('sap-searchInput');
-  const autocompleteList = document.getElementById('sap-autocompleteList');
+  const getElements = (pocFile) => {
+    const output = {};
+    if(pocFile === settings.pocFiles.round1){
+      output.inputField = 'sap-searchInput';
+      output.autocompleteField = 'sap-autocompleteList';
+    }
+    else if(pocFile === settings.pocFiles.round2){
+      output.inputField = 'CompanyName';
+      output.autocompleteField = 'sap-autocompleteList';
+    }
+    return output;
+  }
+
+  const searchInput = document.getElementById(getElements(url.pathname.split('/').pop()).inputField);
+  const autocompleteList = document.getElementById(getElements(url.pathname.split('/').pop()).autocompleteField);
+
   let selectedIndex = -1;
 
 
