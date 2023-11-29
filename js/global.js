@@ -7,7 +7,7 @@ window.addEventListener('load', () => {
 
     /**
      * Implements Google Analytics
-     */
+    
     if (localStorage.getItem('optout') !== 'true') {
         const gaScript = document.createElement('script');
         gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-C6WJMPH8E1';
@@ -17,11 +17,12 @@ window.addEventListener('load', () => {
         gtag('js', new Date());
         gtag('config', 'G-C6WJMPH8E1');
     }
+    */
   
     /**
      * Manages user consent and corresponding UI elements.
      * @function
-     */
+     
     const consentCheck = (() => {
       const optOutLink = document.getElementById('optout');
       const optInLink = document.getElementById('optin');
@@ -45,7 +46,7 @@ window.addEventListener('load', () => {
         localStorage.removeItem('optout');
       });
     })();
-  
+  */
   console.log('[carnix@localhost]$ grep -r fks * 2> /dev/null');
   console.log('[carnix@localhost]$');
 });
