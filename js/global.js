@@ -4,21 +4,18 @@
  * @listens window#load
  */
 window.addEventListener('load', () => {
+
+    /**
+     * Implements Google Analytics
+     */
     if (localStorage.getItem('optout') !== 'true') {
-      const gaScript = document.createElement('script');
-      gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-C6WJMPH8E1';
-      document.body.append(gaScript);
-  
-      window.dataLayer = window.dataLayer || [];
-  
-      /**
-       * Pushes tracking data to the Google Analytics data layer.
-       * @function
-       * @param {...*} args - Tracking arguments to push.
-       */
-      const gtag = (...args) => dataLayer.push(args);
-      gtag('js', new Date());
-      gtag('config', 'G-C6WJMPH8E1');
+        const gaScript = document.createElement('script');
+        gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-C6WJMPH8E1';
+        document.body.append(gaScript);
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-C6WJMPH8E1');
     }
   
     /**
