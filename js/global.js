@@ -7,7 +7,7 @@ window.addEventListener('load', () => {
 
     /**
      * Implements Google Analytics
-     */
+    
     if (localStorage.getItem('optout') !== 'true') {
         const gaScript = document.createElement('script');
         gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-C6WJMPH8E1';
@@ -17,6 +17,7 @@ window.addEventListener('load', () => {
         gtag('js', new Date());
         gtag('config', 'G-C6WJMPH8E1');
     }
+    */
   
     /**
      * Manages user consent and corresponding UI elements.
