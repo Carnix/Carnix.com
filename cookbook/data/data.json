@@ -1,0 +1,168 @@
+{
+  "cookbook": "The Langford Family Cookbook",
+  "generated": "2026-09-02",
+  "note": "status: 'confirmed' = explicitly finalized for The Book. 'candidate' = logged as a hit but not yet confirmed. category is inferred from the recipe, not explicitly stated, and should be reviewed before publishing.",
+  "recipes": [
+    {
+      "title": "Sophie's Spinach and Artichoke Dip",
+      "status": "confirmed",
+      "category": "appetizer/dip",
+      "contributor": "Sophie",
+      "week_logged": null,
+      "servings": null,
+      "ingredients": [
+        { "item": "cream cheese", "amount": "2", "unit": "8 oz. packages", "notes": "softened" },
+        { "item": "mayonnaise", "amount": "1/2", "unit": "cup" },
+        { "item": "sour cream", "amount": "1/2", "unit": "cup" },
+        { "item": "frozen chopped spinach", "amount": "1", "unit": "10 oz. box/bag", "notes": "thawed and pressed dry; do not use fresh spinach, it will not wilt in this preparation" },
+        { "item": "artichoke hearts, quartered", "amount": "1 can (14 oz.) + 1 jar (~8 oz.)", "unit": "~22 oz. total", "notes": "drained/rinsed, hand rough-chopped into larger chunks; use quartered not pre-chopped hearts; this ~22oz combo is untested, confirm before treating as final" },
+        { "item": "garlic salt", "amount": "2", "unit": "tsp", "notes": "reduced from original 3/4 tbsp, which was too salty" },
+        { "item": "onion powder", "amount": "1", "unit": "tbsp" },
+        { "item": "mozzarella cheese, shredded", "amount": "2", "unit": "cups", "notes": "divided: 1 cup for filling, 1 cup for topping" },
+        { "item": "Parmesan cheese, shredded", "amount": "1.5", "unit": "cups", "notes": "divided: 1 cup for filling, 1/2 cup for topping" },
+        { "item": "salt and pepper", "amount": "to taste", "unit": null }
+      ],
+      "instructions": [
+        "Preheat oven to 375°F (190°C).",
+        "In a large bowl, combine cream cheese, mayonnaise, sour cream, spinach, artichoke hearts, garlic salt, onion powder, 1 cup mozzarella, and 1 cup Parmesan. Season with salt and pepper to taste. Mix until well combined.",
+        "Transfer to an oven-safe baking dish. Top with remaining 1 cup mozzarella and 1/2 cup Parmesan.",
+        "Bake 25-30 minutes, until melted and browning.",
+        "Serve hot with chips or vegetables."
+      ],
+      "open_questions": [
+        "Confirm the 14 oz can + 8 oz jar (~22 oz) artichoke quantity on next test batch."
+      ]
+    },
+    {
+      "title": "Beef Birria Tacos",
+      "status": "candidate",
+      "category": "entree",
+      "contributor": null,
+      "week_logged": null,
+      "servings": null,
+      "notes": "His real go-to recipe, used with great success. An earlier Week of Aug 2 recipe was NOT this one and did not work out.",
+      "ingredients": [
+        { "item": "beef chuck roast, cut into 3-inch chunks", "amount": "4", "unit": "lb" },
+        { "item": "guajillo chiles", "amount": "10", "unit": null },
+        { "item": "ancho chiles", "amount": "5", "unit": null },
+        { "item": "árbol chiles", "amount": "3", "unit": null, "notes": "adjust for spice" },
+        { "item": "Roma tomatoes", "amount": "2", "unit": null },
+        { "item": "white onion, quartered", "amount": "1", "unit": null },
+        { "item": "garlic cloves", "amount": "6", "unit": null },
+        { "item": "low-sodium beef broth", "amount": "2", "unit": "cups" },
+        { "item": "apple cider vinegar", "amount": "2", "unit": "tbsp" },
+        { "item": "kosher salt", "amount": "2", "unit": "tsp" },
+        { "item": "ground black pepper", "amount": "1", "unit": "tsp" },
+        { "item": "ground cumin", "amount": "1", "unit": "tsp" },
+        { "item": "dried Mexican oregano", "amount": "1", "unit": "tsp" },
+        { "item": "ground cloves", "amount": "1/2", "unit": "tsp" },
+        { "item": "ground cinnamon", "amount": "1/2", "unit": "tsp" },
+        { "item": "ground ginger", "amount": "1/4", "unit": "tsp" },
+        { "item": "bay leaves", "amount": "3", "unit": null },
+        { "item": "corn tortillas", "amount": "to taste", "unit": null, "notes": "for serving" },
+        { "item": "white onion, diced", "amount": "to taste", "unit": null, "notes": "for serving" },
+        { "item": "cilantro, chopped", "amount": "to taste", "unit": null, "notes": "for serving" },
+        { "item": "Oaxacan cheese", "amount": "to taste", "unit": null, "notes": "for serving" }
+      ],
+      "instructions": [
+        "Deseed and rinse chiles, simmer in water 15 minutes until softened.",
+        "Broil tomatoes, onion, and garlic on a sheet pan 4-6 minutes until lightly charred.",
+        "Blend chiles with 1 cup of their cooking water, the charred tomato/onion/garlic, broth, vinegar, cumin, oregano, cloves, cinnamon, and ginger until smooth.",
+        "Put beef chunks in slow cooker, pour sauce over, add bay leaves, mix, cover.",
+        "Cook low 8-9 hrs or high 4-5 hrs until fall-apart tender.",
+        "Discard bay leaves, shred beef, reserve 1-2 cups of the fattiest top-layer liquid (consommé), return shredded beef to cooker to absorb remaining liquid.",
+        "For tacos: dip (don't dunk) tortillas in the reserved fatty consommé, fry in a hot skillet, flip, sprinkle cheese across the whole tortilla, add beef + onion + cilantro to half, fold once cheese melts, fry 2-3 minutes per side until crispy.",
+        "Serve with consommé for dipping."
+      ]
+    },
+    {
+      "title": "Cuban Mojo Pork Tenderloin",
+      "status": "candidate",
+      "category": "entree",
+      "contributor": null,
+      "week_logged": "July 26",
+      "notes": "A hit. Leftovers repurposed into tacos.",
+      "ingredients": [],
+      "instructions": []
+    },
+    {
+      "title": "Avocado-Tomato-Red Onion Salad",
+      "status": "candidate",
+      "category": "side",
+      "contributor": null,
+      "week_logged": "July 26",
+      "notes": "A hit, described as \"basically deconstructed guacamole.\" He altered the recipe at cook time but couldn't recall the change afterward.",
+      "ingredients": [],
+      "instructions": []
+    },
+    {
+      "title": "Instant Pot Beef Barbacoa",
+      "status": "candidate",
+      "category": "entree",
+      "contributor": null,
+      "week_logged": "July 26",
+      "notes": "A hit; served with a chayote-lime slaw side with avocado added.",
+      "ingredients": [],
+      "instructions": []
+    },
+    {
+      "title": "Moroccan Chermoula Chicken with Fennel/Orange/Olive Salad",
+      "status": "rejected",
+      "category": "entree",
+      "contributor": null,
+      "week_logged": "July 26",
+      "notes": "Not a keeper - just okay, nothing spectacular. Included for record-keeping, likely excluded from The Book.",
+      "ingredients": [],
+      "instructions": []
+    },
+    {
+      "title": "Ground Beef Tortilla Roll-Ups",
+      "status": "candidate",
+      "category": "entree",
+      "contributor": null,
+      "week_logged": "Aug 16",
+      "notes": "Good, but recipe as originally written made way too much (34 rolls, almost half the meat mixture left over - scale down next time). 93% lean beef overcooked at original bake time; better at 18 min at 420°F plus ~5 more minutes to melt the cheese well.",
+      "ingredients": [],
+      "instructions": []
+    },
+    {
+      "title": "Esquites-Style Street Corn Salad",
+      "status": "candidate",
+      "category": "side",
+      "contributor": null,
+      "week_logged": "Aug 16",
+      "notes": "His go-to version, a hit. Add a diced jalapeño to the skillet along with the corn (he normally includes it but forgot this time).",
+      "ingredients": [],
+      "instructions": []
+    },
+    {
+      "title": "Smoky Semi-Charro Black Beans",
+      "status": "candidate",
+      "category": "side",
+      "contributor": null,
+      "week_logged": "Aug 30",
+      "notes": "A hit, \"tastes awesome,\" strong Book contender.",
+      "ingredients": [
+        { "item": "black beans", "amount": "2", "unit": "cans", "notes": "undrained" },
+        { "item": "bacon, diced", "amount": "2", "unit": "slices" },
+        { "item": "onion, diced", "amount": "1/2", "unit": null },
+        { "item": "jalapeño, diced", "amount": "1", "unit": null },
+        { "item": "tomato, diced", "amount": "1", "unit": null },
+        { "item": "garlic cloves, minced", "amount": "3", "unit": null },
+        { "item": "ground cumin", "amount": "1", "unit": "tsp" },
+        { "item": "smoked paprika", "amount": "1/2", "unit": "tsp" },
+        { "item": "cayenne", "amount": "1/4", "unit": "tsp" },
+        { "item": "homemade chicken stock", "amount": "1/2", "unit": "cup", "notes": "plus more as needed; a full cup was too much, 1/2 cup plus more while reducing was right" },
+        { "item": "salt", "amount": "1", "unit": "tsp" },
+        { "item": "black pepper", "amount": "~40 turns", "unit": null, "notes": "from his copper hand-crank mill, once dialed in" }
+      ],
+      "instructions": [
+        "Dice bacon, onion, jalapeño, tomato and mince garlic.",
+        "Combine beans (undrained), bacon, onion, jalapeño, tomato, garlic, cumin, smoked paprika, and cayenne.",
+        "Add 1/2 cup chicken stock, adding more as needed while reducing.",
+        "Season with salt and ~40 turns of black pepper.",
+        "Cook, reducing to desired consistency."
+      ]
+    }
+  ]
+}
