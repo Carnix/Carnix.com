@@ -11,4 +11,5 @@ export const secretNavLinks = [
     { label: 'Birthday Boys', href: 'birthday-boys/' },
     { label: 'Image to ASCII Art', href: 'to-ascii/' },
     { label: 'Dungeon of the Smiling Knives', href: 'smiling-knives/' },
+    { label: 'Cookbook', href: 'cookbook/' },
   ];
