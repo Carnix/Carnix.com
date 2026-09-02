@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Langford Family Cookbook</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/cookbook.css">
+    <script src="../js/global.js" defer></script>
+    <script src="js/cookbook.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <h1>The Langford Family Cookbook</h1>
+    </header>
+    <main>
+        <div id="controls">
+            <div id="filters">
+                <button class="filter-btn active" data-filter="all">all</button>
+                <button class="filter-btn" data-filter="confirmed">confirmed</button>
+                <button class="filter-btn" data-filter="candidate">candidates</button>
+                <button class="filter-btn" data-filter="rejected">rejected</button>
+            </div>
+            <p id="recipe-count"></p>
+        </div>
+        <div id="recipe-list"></div>
+    </main>
+    <footer>
+        <p>Eat the world</p>
+    </footer>
+</body>
+</html>
