@@ -8,8 +8,68 @@
   <script type="module" src="js/main.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Game is a work in progress</h1>
-    </header>
+
+  <div id="name-overlay" class="overlay hidden">
+    <div class="overlay-box">
+      <p class="curator-voice">"Another one stumbles in. At least tell me your name before I break you."</p>
+      <input type="text" id="name-input" aria-label="Your name" placeholder="your name..." maxlength="20" autocomplete="off" spellcheck="false">
+      <button id="name-submit" type="button">Enter the Dungeon</button>
+    </div>
+  </div>
+
+  <div id="game">
+
+    <div id="narrator">
+      <span id="narrator-label">THE CURATOR:</span>
+      <span id="narrator-text"></span>
+    </div>
+
+    <div id="play-area">
+      <div id="viewport-wrap">
+        <pre id="viewport" class="ascii-viewport"></pre>
+        <div id="facing-label"></div>
+      </div>
+
+      <div id="stats-panel">
+        <div class="stat-row">
+          <span class="stat-label">HP</span>
+          <div class="bar-wrap"><div id="hp-bar" class="bar hp-bar"></div></div>
+          <span id="hp-text" class="stat-val">—</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-label">MP</span>
+          <div class="bar-wrap"><div id="mp-bar" class="bar mp-bar"></div></div>
+          <span id="mp-text" class="stat-val">—</span>
+        </div>
+        <div id="stat-extras">
+          <div class="stat-extra-row"><span class="stat-extra-label">Floor</span><span id="stat-floor">—</span></div>
+          <div class="stat-extra-row"><span class="stat-extra-label">Gold</span><span id="stat-gold">0</span></div>
+          <div class="stat-extra-row"><span class="stat-extra-label">Class</span><span id="stat-class">—</span></div>
+        </div>
+        <div id="combat-stats" class="hidden">
+          <div class="separator"></div>
+          <div id="monster-name"></div>
+          <div class="stat-row">
+            <span class="stat-label">ENY</span>
+            <div class="bar-wrap"><div id="enemy-bar" class="bar enemy-bar"></div></div>
+            <span id="enemy-text" class="stat-val">—</span>
+          </div>
+          <div id="monster-statuses"></div>
+        </div>
+        <div class="separator"></div>
+        <pre id="minimap"></pre>
+      </div>
+    </div>
+
+    <div id="log-panel">
+      <div id="log-lines"></div>
+    </div>
+
+    <div id="controls-panel">
+      <div id="controls"></div>
+    </div>
+
+  </div>
+
 </body>
 </html>
