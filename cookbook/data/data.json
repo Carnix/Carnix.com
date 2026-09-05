@@ -1,6 +1,6 @@
 {
   "cookbook": "The Langford Family Cookbook",
-  "generated": "2026-09-02",
+  "generated": "2026-09-05",
   "note": "status: 'confirmed' = explicitly finalized for The Book. 'candidate' = logged as a hit but not yet confirmed. category is inferred from the recipe, not explicitly stated, and should be reviewed before publishing.",
   "recipes": [
     {
@@ -82,8 +82,22 @@
       "contributor": null,
       "week_logged": "July 26",
       "notes": "A hit. Leftovers repurposed into tacos.",
-      "ingredients": [],
-      "instructions": []
+      "ingredients": [
+        { "item": "pork tenderloin", "amount": "2", "unit": "lb" },
+        { "item": "garlic cloves, minced", "amount": "6", "unit": null },
+        { "item": "orange juice, fresh", "amount": "1/2", "unit": "cup" },
+        { "item": "lime juice, fresh", "amount": "1/4", "unit": "cup" },
+        { "item": "dried oregano", "amount": "1.5", "unit": "tsp" },
+        { "item": "ground cumin", "amount": "1", "unit": "tsp" },
+        { "item": "olive oil", "amount": "3", "unit": "tbsp" },
+        { "item": "kosher salt", "amount": "1.5", "unit": "tsp" },
+        { "item": "black pepper", "amount": "0.5", "unit": "tsp" }
+      ],
+      "instructions": [
+        "Whisk garlic, orange juice, lime juice, oregano, cumin, olive oil, salt, and pepper together. Add pork, marinate at least 30 min (up to overnight, refrigerated).",
+        "Remove pork from marinade (discard marinade). Sear in a hot oven-safe skillet, 2-3 min per side, until browned.",
+        "Roast at 400°F until internal temp hits 145°F, about 15-20 min. Rest 5 min, slice."
+      ]
     },
     {
       "title": "Avocado-Tomato-Red Onion Salad",
@@ -91,9 +105,19 @@
       "category": "side",
       "contributor": null,
       "week_logged": "July 26",
-      "notes": "A hit, described as \"basically deconstructed guacamole.\" He altered the recipe at cook time but couldn't recall the change afterward.",
-      "ingredients": [],
-      "instructions": []
+      "notes": "A hit, described as \"basically deconstructed guacamole.\" He altered the recipe at cook time but couldn't recall the change — base recipe below, exact alteration unconfirmed.",
+      "ingredients": [
+        { "item": "large avocados, diced", "amount": "2", "unit": null },
+        { "item": "medium Roma tomatoes, diced", "amount": "2", "unit": null },
+        { "item": "red onion, thinly sliced", "amount": "1/4", "unit": "cup" },
+        { "item": "lime juice", "amount": "1", "unit": "tbsp" },
+        { "item": "olive oil", "amount": "1", "unit": "tbsp" },
+        { "item": "cilantro, chopped", "amount": "2", "unit": "tbsp", "notes": "optional" },
+        { "item": "salt", "amount": "1/4", "unit": "tsp" }
+      ],
+      "instructions": [
+        "Toss all ingredients together in a bowl. Serve alongside the pork."
+      ]
     },
     {
       "title": "Instant Pot Beef Barbacoa",
@@ -101,9 +125,44 @@
       "category": "entree",
       "contributor": null,
       "week_logged": "July 26",
-      "notes": "A hit; served with a chayote-lime slaw side with avocado added.",
-      "ingredients": [],
-      "instructions": []
+      "notes": "A hit.",
+      "ingredients": [
+        { "item": "beef chuck roast, cut into 3-4 large chunks", "amount": "3", "unit": "lb" },
+        { "item": "chipotle peppers in adobo, chopped", "amount": "3", "unit": null },
+        { "item": "adobo sauce (from the can)", "amount": "2", "unit": "tbsp" },
+        { "item": "garlic cloves", "amount": "4", "unit": null },
+        { "item": "yellow onion, roughly chopped", "amount": "1/2", "unit": null },
+        { "item": "lime juice", "amount": "2", "unit": "tbsp" },
+        { "item": "ground cumin", "amount": "1", "unit": "tsp" },
+        { "item": "dried oregano", "amount": "1", "unit": "tsp" },
+        { "item": "beef broth", "amount": "1", "unit": "cup" },
+        { "item": "salt", "amount": "1.5", "unit": "tsp" }
+      ],
+      "instructions": [
+        "Add all ingredients to the Instant Pot.",
+        "Seal and cook on high pressure 45 min, natural release 15 min.",
+        "Shred beef, stir back into cooking liquid, adjust salt to taste."
+      ]
+    },
+    {
+      "title": "Chayote-Lime Slaw",
+      "status": "confirmed",
+      "category": "side",
+      "contributor": null,
+      "week_logged": "July 26",
+      "notes": "Served alongside the Instant Pot Beef Barbacoa. A hit; he added avocado to it. Red onion, jalapeño, and pineapple were discussed as possible additions but not yet confirmed as tried.",
+      "ingredients": [
+        { "item": "chayote squash, peeled, seeded, and julienned", "amount": "2", "unit": "medium" },
+        { "item": "lime juice", "amount": "2", "unit": "tbsp" },
+        { "item": "cilantro, chopped", "amount": "2", "unit": "tbsp" },
+        { "item": "olive oil", "amount": "1", "unit": "tbsp" },
+        { "item": "salt", "amount": "1/4", "unit": "tsp" },
+        { "item": "avocado, diced", "amount": "1", "unit": null, "notes": "added at cook time, worked well" }
+      ],
+      "instructions": [
+        "Toss chayote, lime juice, cilantro, olive oil, and salt together in a bowl.",
+        "Fold in diced avocado just before serving."
+      ]
     },
     {
       "title": "Ground Beef Tortilla Roll-Ups",
@@ -112,8 +171,32 @@
       "contributor": null,
       "week_logged": "Aug 16",
       "notes": "Good, but recipe as originally written made way too much (34 rolls, almost half the meat mixture left over - scale down next time). 93% lean beef overcooked at original bake time; better at 18 min at 420°F plus ~5 more minutes to melt the cheese well.",
-      "ingredients": [],
-      "instructions": []
+      "ingredients": [
+        { "item": "burrito-size flour tortillas", "amount": "6", "unit": null },
+        { "item": "ground beef (93% lean)", "amount": "2", "unit": "lb" },
+        { "item": "onion, finely diced", "amount": "1", "unit": "small" },
+        { "item": "bell pepper, finely diced", "amount": "1", "unit": "small" },
+        { "item": "fresh parsley, chopped", "amount": "3", "unit": "tbsp" },
+        { "item": "shredded mozzarella", "amount": "1.5", "unit": "cups", "notes": "divided" },
+        { "item": "salt", "amount": "2", "unit": "tsp" },
+        { "item": "garlic powder", "amount": "1", "unit": "tsp" },
+        { "item": "onion powder", "amount": "1", "unit": "tsp" },
+        { "item": "paprika", "amount": "1/4", "unit": "tsp" },
+        { "item": "olive oil", "amount": "1", "unit": "tbsp", "notes": "for brushing" },
+        { "item": "ketchup", "amount": "3", "unit": "tbsp", "notes": "for dip" },
+        { "item": "mayo", "amount": "6", "unit": "tbsp", "notes": "for dip" },
+        { "item": "garlic powder", "amount": "1/2", "unit": "tsp", "notes": "for dip" }
+      ],
+      "instructions": [
+        "Preheat oven. Combine beef, onion, bell pepper, parsley, 1 cup mozzarella, salt, garlic powder, onion powder, and paprika.",
+        "Divide filling among tortillas, spread thin and even to the edges, roll tightly, slice into ~2.5\" rounds.",
+        "Arrange cut-side up in a baking dish, brush with olive oil.",
+        "Bake 18 minutes at 420°F, top with remaining mozzarella, bake ~5 more minutes until melted.",
+        "Whisk together ketchup, mayo, and garlic powder for the dip; serve alongside."
+      ],
+      "open_questions": [
+        "Original quantities made 34 rolls with ~half the meat mixture unused — needs a scaled-down version tested before fully locked in."
+      ]
     },
     {
       "title": "Esquites-Style Street Corn Salad",
@@ -122,8 +205,20 @@
       "contributor": null,
       "week_logged": "Aug 16",
       "notes": "His go-to version, a hit. Add a diced jalapeño to the skillet along with the corn (he normally includes it but forgot this time).",
-      "ingredients": [],
-      "instructions": []
+      "ingredients": [
+        { "item": "corn kernels", "amount": "3", "unit": "cups", "notes": "fresh off the cob, or frozen" },
+        { "item": "jalapeño, diced", "amount": "1", "unit": null },
+        { "item": "mayo", "amount": "1/4", "unit": "cup" },
+        { "item": "cotija cheese, crumbled (or feta)", "amount": "1/4", "unit": "cup" },
+        { "item": "lime juice", "amount": "1", "unit": "lime" },
+        { "item": "chili powder", "amount": "1/4", "unit": "tsp" },
+        { "item": "cilantro, chopped", "amount": "2", "unit": "tbsp" }
+      ],
+      "instructions": [
+        "In a dry skillet over medium-high heat, cook corn and diced jalapeño together, without stirring for 2-3 min stretches, until charred in spots, 8-10 min total.",
+        "Transfer to a bowl, stir in mayo, cotija, lime juice, and chili powder.",
+        "Top with cilantro, serve warm or at room temperature."
+      ]
     },
     {
       "title": "Smoky Semi-Charro Black Beans",
@@ -152,6 +247,55 @@
         "Add 1/2 cup chicken stock, adding more as needed while reducing.",
         "Season with salt and ~40 turns of black pepper.",
         "Cook, reducing to desired consistency."
+      ]
+    },
+    {
+      "title": "Mexican Street Corn (Elote)",
+      "status": "confirmed",
+      "category": "side",
+      "contributor": null,
+      "week_logged": "Sep 2",
+      "notes": "Sister recipe to the Esquites version — on-the-cob presentation vs. off-the-cob salad.",
+      "ingredients": [
+        { "item": "fresh corn (or frozen kernels)", "amount": "4", "unit": "ears (or 4 cups frozen)" },
+        { "item": "mayonnaise", "amount": "3", "unit": "tbsp" },
+        { "item": "cotija cheese, crumbled", "amount": "1/2", "unit": "cup" },
+        { "item": "lime", "amount": "1", "unit": null, "notes": "cut into wedges" },
+        { "item": "chili powder", "amount": "to taste", "unit": null },
+        { "item": "smoked paprika", "amount": "optional", "unit": null },
+        { "item": "cayenne", "amount": "pinch, optional", "unit": null }
+      ],
+      "instructions": [
+        "Grill corn directly over a gas burner or grill pan, turning frequently, until charred in spots all around, ~8-10 min. (For frozen kernels: char in a dry cast iron skillet over high heat without stirring until colored.)",
+        "Brush/slather each ear with mayo while still hot.",
+        "Hit with lime, shower with cotija and chili powder.",
+        "Serve immediately — does not hold well."
+      ]
+    },
+    {
+      "title": "Italian Sausage & White Bean Skillet",
+      "status": "confirmed",
+      "category": "entree",
+      "contributor": null,
+      "week_logged": "Aug 30",
+      "notes": "Very good, a Book entry. Basil was cut entirely — felt it would be overload.",
+      "ingredients": [
+        { "item": "hot Italian sausage, casings removed", "amount": "1", "unit": "lb" },
+        { "item": "sweet Italian sausage, casings removed", "amount": "1", "unit": "lb" },
+        { "item": "shallot, minced", "amount": "1", "unit": null },
+        { "item": "garlic cloves, minced", "amount": "4", "unit": null },
+        { "item": "cannellini beans, drained and rinsed", "amount": "2", "unit": "cans" },
+        { "item": "diced tomatoes", "amount": "1", "unit": "14.5 oz can" },
+        { "item": "homemade chicken stock", "amount": "1", "unit": "cup" },
+        { "item": "fresh parsley, chopped", "amount": "to taste", "unit": null, "notes": "to finish" },
+        { "item": "salt", "amount": "1/2", "unit": "tsp", "notes": "at most" },
+        { "item": "black pepper", "amount": "~20 turns", "unit": null, "notes": "from his copper hand-crank mill" }
+      ],
+      "instructions": [
+        "Brown sausage in a large skillet, 5-6 min.",
+        "Add shallot, cook 1 min, then garlic, cook 30 sec.",
+        "Add beans, tomatoes, and stock. Simmer uncovered 10 min.",
+        "Stir in parsley off heat."
       ]
     }
   ]
